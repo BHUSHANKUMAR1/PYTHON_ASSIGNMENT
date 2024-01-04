@@ -26,12 +26,12 @@ mydb.commit()
 
 data="insert into STUDENT_DETAILS(first_name,last_name,age,grade) values (%s, %s, %s, %s)"
 value = [
-    ('John','Smith',17,85),
-    ('Bruse','Wayne',17,82),
+    ('John','Smith',18,85),
+    ('Bruse','Wayne',19,82),
     ('Ron','Smith',17,80),
-    ('Ross','Baker',17,75),
+    ('Ross','Baker',16,75),
     ('Allen','cooper',17,93),
-    ('joey','Jones',17,90),
+    ('joey','Jones',18,90),
 ]
 cursor.executemany(data,value)
 mydb.commit()
